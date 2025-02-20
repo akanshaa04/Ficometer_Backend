@@ -42,7 +42,7 @@ public class FeeCalculationImpl implements FeeCalculationService{
 	    
 	@Override
 	public double fee_calculated(Loan loan) {
-		  double loanAmount = loan.getLoanAmount(); 
+		    double loanAmount = loan.getLoanAmount(); 
 	        int loanTenureMonths = loan.getTenure();
 	        double baseInterestRate = baseInterestService.getLatestBaseInterest().getFixedInterest();
 	        double riskPremiumFactor = baseInterestService.getLatestBaseInterest().getRiskPremium(); 

@@ -23,7 +23,7 @@ import com.bank.serviceImpl.CustomUserServiceImpl;
  
  
 @RestController
-@RequestMapping("/auth")
+@RequestMapping("/auth/bank")
 public class AuthController {
 	@Autowired
 	private UserRepo userRepository;
