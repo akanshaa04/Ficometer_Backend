@@ -1,7 +1,5 @@
 package com.bank.service;
 
-import java.util.List;
-
 import org.springframework.stereotype.Service;
 
 import com.bank.modal.Roe;
@@ -12,5 +10,4 @@ public interface RoeService {
 	public double calculateRoe(Roe roe);
 	public Roe getRoeByPeriod();
 	public void deleteRoe(int id);
-	public List<Roe> allRoe(int n);
 }

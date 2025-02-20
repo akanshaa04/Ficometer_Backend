@@ -1,7 +1,5 @@
 package com.bank.serviceImpl;
 
-import java.util.List;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -36,11 +34,6 @@ public class RoaServiceImpl implements RoaService{
 	@Override
 	public void deleteRoa(int id) {
 		roaRepository.deleteById(id);
-	}
-
-	@Override
-	public List<Roa> allRoa(int n) {
-		return roaRepository.getRoaByMonthPeriod(n);
 	}
 	
 }

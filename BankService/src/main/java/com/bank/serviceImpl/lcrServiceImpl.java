@@ -1,7 +1,5 @@
 package com.bank.serviceImpl;
 
-import java.util.List;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -38,11 +36,6 @@ public class lcrServiceImpl implements lcrService{
 	@Override
 	public void deleteLcr(int id) {
 		lcrRepository.deleteById(id);
-	}
-
-	@Override
-	public List<Lcr> allLcr(int n) {
-		return lcrRepository.getLcrByMonthPeriod(n);
 	}
 	
 }

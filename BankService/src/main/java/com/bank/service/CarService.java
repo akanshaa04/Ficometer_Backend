@@ -1,7 +1,5 @@
 package com.bank.service;
 
-import java.util.List;
-
 import org.springframework.stereotype.Service;
 import com.bank.modal.Car;
 
@@ -15,6 +13,4 @@ public interface CarService {
     public Car getLatestCarByManufactureDate();
 
     public void deleteCar(int id);
-    
-    public List<Car> allCar(int n);
 }

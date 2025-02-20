@@ -1,7 +1,5 @@
 package com.bank.serviceImpl;
 
-import java.util.List;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -36,11 +34,6 @@ public class RoeServiceImpl implements RoeService{
 	@Override
 	public void deleteRoe(int id) {
 		roeRepository.deleteById(id);
-	}
-
-	@Override
-	public List<Roe> allRoe(int n) {
-		return roeRepository.getRoeByMonthPeriod(n);
 	}
 	
 }

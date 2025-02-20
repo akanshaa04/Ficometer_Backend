@@ -1,7 +1,5 @@
 package com.bank.controller;
 
-import java.util.List;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -12,7 +10,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.bank.modal.Lcr;
-import com.bank.modal.Npa;
 import com.bank.modal.Nsfr;
 import com.bank.service.NsfrService;
 import com.bank.service.lcrService;
@@ -42,9 +39,4 @@ public class NsfrController {
 	public void deleteNsfr(@PathVariable int id) {
 		NsfrServiceImpl.deleteNsfr(id);
 	}
-	
-	 @GetMapping("/calculate/nsfr/months/{n}")
-	    public List<Nsfr> calculateAllNsfr(@PathVariable int n) {
-	        return NsfrServiceImpl.allNsfr(n);
-	    }
 }
