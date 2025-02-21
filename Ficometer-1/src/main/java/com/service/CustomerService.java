@@ -20,5 +20,7 @@ public interface CustomerService {
 	public List<Customer> getAllCustomer();
 
 	public double checkCreditScore(int uid);
+
+	public Long getTotalCustomers();
 	
 }

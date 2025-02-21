@@ -56,7 +56,14 @@ public class CustomerController {
 	public List<Customer> getAllCustomer() {
 		return customerService.getAllCustomer();
 	}
-////////////////////////////////////////////CREDIT 
+	
+	
+	@GetMapping("/count")  
+    public Long getTotalCustomers() {  
+        return customerService.getTotalCustomers();  
+    }  
+	
+    //CREDIT 
 	@PostMapping("/add/credit/{customerId}")
 	public ResponseEntity<CreditAccount> addCredit(@PathVariable int customerId, @RequestBody CreditAccount creditAccount) {
 	    Customer customer = customerService.getCustomerById(customerId);
